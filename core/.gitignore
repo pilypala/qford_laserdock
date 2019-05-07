@@ -1,0 +1,18 @@
+.DS_Store
+*xcuserdata*
+*~*
+__generated_files
+
+build-*
+
+.idea
+local.*cmake
+
+local.cmake
+
+# qt creator local file
+CMakeLists.txt.user
+
+*.autosave
+__build
+.vscode
