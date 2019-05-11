@@ -48,11 +48,11 @@ ldCoreExample::ldCoreExample(QQmlApplicationEngine *engine, QObject *parent)
 
     m_ldCore->initialize();
 
-    m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldCircleVisualizer));
-    m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldSquareVisualizer));
-    m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldSpectrumBandVisualizer));
-    m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldGoGoGirlAnimationVisualizer));
-    m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldAnalogClockVisualizer));
+    // m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldCircleVisualizer));
+    // m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldSquareVisualizer));
+    // m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldSpectrumBandVisualizer));
+    // m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldGoGoGirlAnimationVisualizer));
+    // m_visualizers.push_back(std::unique_ptr<ldVisualizer>(new ldAnalogClockVisualizer));
 
     m_game = new ldSpiralFighterGame(this);
 
@@ -73,7 +73,8 @@ void ldCoreExample::init()
         return;
     }
 
-    ldCore::instance()->task()->setCurrentVisualizer(m_visualizers[0].get());
+    // ldCore::instance()->task()->setCurrentVisualizer(m_visualizers[0].get());
+     m_game->set_isActive(true);
 }
 
 void ldCoreExample::activateVis(int index)

@@ -38,21 +38,21 @@ Item {
                     focusPolicy: Qt.NoFocus
 
                     model: ListModel {
-                        ListElement {
-                            text: "Circle"
-                        }
-                        ListElement {
-                            text: "Square"
-                        }
-                        ListElement {
-                            text: "Spectrum"
-                        }
-                        ListElement {
-                            text: "GoGoGirl"
-                        }
-                        ListElement {
-                            text: "Clock"
-                        }
+                        // ListElement {
+                        //     text: "Circle"
+                        // }
+                        // ListElement {
+                        //     text: "Square"
+                        // }
+                        // ListElement {
+                        //     text: "Spectrum"
+                        // }
+                        // ListElement {
+                        //     text: "GoGoGirl"
+                        // }
+                        // ListElement {
+                        //     text: "Clock"
+                        // }
                         ListElement {
                             text: "Spiral Fighter"
                         }
